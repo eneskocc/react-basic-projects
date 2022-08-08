@@ -1,5 +1,5 @@
 import { InputGroup, Form, Button, Table } from 'react-bootstrap'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import './App.css'
 
@@ -37,9 +37,9 @@ function App() {
     setNewTodo('')
   }
 
-  useEffect(() => {
-    console.log(todoList)
-  }, [todoList])
+  // useEffect(() => {
+  //   console.log(todoList)
+  // }, [todoList])
 
   const completedTodo = (id) => {
     setTodoList((prevTodoList) =>
