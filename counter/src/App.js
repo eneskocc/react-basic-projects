@@ -3,7 +3,6 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [bingo, setBingo] = useState('')
 
   const decrase = () => {
     if (count > 0) {
